@@ -1,5 +1,3 @@
-import Link from "next/link";
-import styles from "../styles/404.module.css";
 import Image from "next/image";
 
 export default function FourOhFour() {
