@@ -32,7 +32,7 @@ npm install
 
 ```
     env: {
-      API-KEY:"Your API_KEY",
+      API_KEY:"Your API_KEY",
       DELIVERY_TOKEN:"Your DELIVERY_TOKEN",
       ENVIRONMENT:"YOUR ENVIRONMENT",
     },

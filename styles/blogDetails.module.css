@@ -69,7 +69,6 @@
   border-radius: 10px;
 }
 
-.link-tile:hover {
-  border: 2px solid rgb(255, 135, 135);
+.link-tile p:hover {
   color: rgb(177, 51, 51);
 }
