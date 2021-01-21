@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import { getLinks } from "../helper/getLinks";
 import { getAllEntries } from "../helper/getBlogData";
+import { getStaticProps } from "./blog/[id]";
 
 export default function Home({ blogList, links, footer }) {
   const router = useRouter();
@@ -25,9 +26,11 @@ export default function Home({ blogList, links, footer }) {
   );
 }
 
-Home.getInitialProps = async () => {
-  const blogList = await getAllEntries();
+export async function getStaticProps({ params }) {
+  const blog = await getAllEntries();
   const links = await getLinks("navigation_aditya");
   const footer = await getLinks("footer_aditya");
-  return { blogList: blogList, links: links, footer: footer };
-};
+  return {
+    props: { blog: blog, links: links, footer: footer },
+  };
+}
