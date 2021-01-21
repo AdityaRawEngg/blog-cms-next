@@ -1,0 +1,31 @@
+.footer{
+    height: 40vh;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+.footer-media{
+    width: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-links {
+    width: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 120%;
+}
+.footer-links a {
+    border-bottom: 1px solid white;
+}
+.footer-links a:hover {
+    color: red;
+    border-bottom:1px solid red ;
+}
