@@ -28,7 +28,18 @@ cd blog-cms-next
 npm install
 ```
 
-4. Uncomment all the comment in next.config.env file.
+4. open next.conifg.env and add
+
+```
+    env: {
+      API-KEY:"Your API_KEY",
+      DELIVERY_TOKEN:"Your DELIVERY_TOKEN",
+      ENVIRONMENT:"YOUR ENVIRONMENT",
+    },
+
+```
+
+in return object
 
 5. Added API_KEY, DELIVERY_TOKEN and ENVIRONMENT of your stack in next.config.env file.
 
