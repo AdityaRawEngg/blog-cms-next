@@ -1,0 +1,25 @@
+.tiles{
+    border: 3px solid blue;
+    margin: 2%;
+    text-align: center;
+    height: auto;
+    width: 50vh;
+    border-radius: 10px;
+    padding: 2%;
+}
+.tiles img {
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+.read-me{
+    border: 2px solid red;
+    padding: 3% 10%;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 5px;
+}
+.read-me:hover {
+    border: 2px solid red;
+    color: red;
+    background-color: whitesmoke;
+}
