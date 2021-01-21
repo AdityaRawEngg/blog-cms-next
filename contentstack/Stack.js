@@ -2,6 +2,7 @@ import Contentstack from "contentstack";
 const Stack = Contentstack.Stack(
   process.env.API_KEY,
   process.env.DELIVERY_TOKEN,
-  process.env.ENVIRONMENT
+  process.env.ENVIRONMENT,
+  "us"
 );
 export default Stack;
