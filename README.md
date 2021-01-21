@@ -1,3 +1,55 @@
+# CMS Backend for Blog Rendering
+
+This is a server less project which renderes blogs using [contentstack](https://www.contentstack.com/) cms.Project implemented using next ssr.
+
+## Feature
+
+1. Data of all the component is fetched from cms backend.
+2. Home page shows List of all blogs.
+3. On clicking Read me Details of blogs is rendered.
+
+## Downloading and Running on Localhost
+
+1.
+
+```
+Git clone https://github.com/AdityaRawEngg/blog-cms-next.git
+```
+
+2.
+
+```
+cd blog-cms-next
+```
+
+3.
+
+```
+npm install
+```
+
+4. Uncomment all the comment in next.config.env file.
+
+5. Added API_KEY, DELIVERY_TOKEN and ENVIRONMENT of your stack in next.config.env file.
+
+6. To run project on development mode
+
+```
+npm run dev
+```
+
+To start project first create build
+
+```
+npm run build
+```
+
+then
+
+```
+npm run start
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +84,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Live Link
+
+[Live Link](https://blog-cms-next.vercel.app/)
