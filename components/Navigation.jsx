@@ -12,7 +12,7 @@ export default function Navigation({ links }) {
         {links.navigation_links.map((link) => {
           return (
             <div key={link.display_name}>
-              <Link href={link.href} replace>
+              <Link href="/">
                 <a>{link.display_name}</a>
               </Link>
             </div>
