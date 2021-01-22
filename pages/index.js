@@ -26,9 +26,12 @@ export default function Home({ blogList, links, footer }) {
   );
 }
 
-Home.getInitialProps = async () => {
+export async function getServerSideProps(context) {
   const blogList = await getAllEntries();
   const links = await getLinks("navigation_aditya");
   const footer = await getLinks("footer_aditya");
-  return { blogList: blogList, links: links, footer: footer };
-};
+
+  return {
+    props: { blogList: blogList, links: links, footer: footer },
+  };
+}
